@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Hello, Django</title>
-    </head>
-    <body>
-        <strong>Hello there</strong>
-        <b>Hello again</b>
-        <p>Third Hello</p>
-    </body>
-</html>
+{% extends "main/base.html" %}
+{% block title %}
+Hello, Django
+{% endblock %}
+{% block content %}
+<strong>Hello there</strong>
+<b>Hello again</b>
+<p>Third Hello</p>
+{% endblock %}
